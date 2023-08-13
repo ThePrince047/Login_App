@@ -26,6 +26,12 @@ public class Login extends AppCompatActivity {
         ProgressBar pg=findViewById(R.id.prog);
         MaterialButton login=findViewById(R.id.btnlogin);
         TextView sign=findViewById(R.id.ott);
+
+
+        String username=getIntent().getStringExtra("username");
+        String password=getIntent().getStringExtra("password");
+
+        
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
